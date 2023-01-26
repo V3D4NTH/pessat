@@ -4,7 +4,26 @@ from tkinter import messagebox
 root = Tk()
 root.geometry("400x400")
 #creating a list of all the questions so that we dont have to keep creating the same old buttons a million times
-questions_total = ["My current academic program does not excite me","What I am learning now aligns with my future aspirations","I am conscious about the value of  my education","I sincerely work towards achieving  my academic goals I set for myself ","I study because I´m interested in learning","When the topics are difficult, I either give up or study the easy parts","I set goals for the grades I want in my classes","Even If I do not like an assignment, I can get myself to work on it","I make good use of the time I invest in studying","Despite complaining much about my work, I still do it","I do not have noticeable achievements that I am proud of","I feel that virtually any topic can be interesting once I get into it","I am not scared when I have to say NO in any situation ","I have difficulty in making friends ","I am not confident when I have to speak in public","Whenever I see that my initial plans do not lead to success in my studies, I improvise","In a difficult spot, my immediate action would be to put things right""I’m good at finding solutions to problems.","I've been made stronger and better by tough experiences","I see difficulties as temporary and expect to overcome them"]
+questions_total = ["My current academic program does not excite me",
+"What I am learning now aligns with my future aspirations",
+"I am conscious about the value of  my education",
+"I sincerely work towards achieving  my academic goals I set for myself ",
+"I study because I´m interested in learning",
+"When the topics are difficult, I either give up or study the easy parts",
+"I set goals for the grades I want in my classes",
+"Even If I do not like an assignment, I can get myself to work on it",
+"I make good use of the time I invest in studying",
+"Despite complaining much about my work, I still do it",
+"I do not have noticeable achievements that I am proud of",
+"I feel that virtually any topic can be interesting once I get into it",
+"I am not scared when I have to say NO in any situation ",
+"I have difficulty in making friends ",
+"I am not confident when I have to speak in public",
+"Whenever I see that my initial plans do not lead to success in my studies, I improvise",
+"In a difficult spot, my immediate action would be to put things right",
+"I’m good at finding solutions to problems.",
+"I've been made stronger and better by tough experiences",
+"I see difficulties as temporary and expect to overcome them"]
 
 #opening a file to write the responses into
 storage_file = open("answers.txt",'w')
