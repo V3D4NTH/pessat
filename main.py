@@ -70,7 +70,7 @@ def update_q():
     global i
 #grid_forget() function just removes the widget from the screen
     ql.grid_forget()
-    if i<18:
+    if i<len(questions_total)-1:
         create_label(next(a))
     else:
         root.destroy()
@@ -88,10 +88,10 @@ def selection():
     #print(var.get())
     storage_file.write(str(var.get())+"\n")
 def create_options():
-    option1 = Radiobutton(root,text = "1", variable = var, value = 1)
-    option2 = Radiobutton(root,text = "2", variable = var, value = 2)
-    option3 = Radiobutton(root,text = "3", variable = var, value = 3)
-    option4 = Radiobutton(root,text = "4", variable = var, value = 4)
+    option1 = Radiobutton(root,text = "Strongly Agree", variable = var, value = 1)
+    option2 = Radiobutton(root,text = "Agree", variable = var, value = 2)
+    option3 = Radiobutton(root,text = "Disagree", variable = var, value = 3)
+    option4 = Radiobutton(root,text = "Strongly Disagree", variable = var, value = 4)
 
     option1.grid(row = 2,sticky = W)
     option2.grid(row = 4,sticky = W)
@@ -110,5 +110,7 @@ def call_first():
 root.mainloop()
 storage_file.close()
 
-
-# In[ ]:
+import graph
+graph.graph()
+messagebox.showinfo("End","You have reached the end")
+ 
