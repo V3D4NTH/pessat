@@ -74,7 +74,6 @@ def update_q():
         create_label(next(a))
     else:
         root.destroy()
-        messagebox.showinfo("End","You have reached the end")
     i+=1
     selection()
 #this function adds a question to the screen
@@ -110,7 +109,7 @@ def call_first():
 root.mainloop()
 storage_file.close()
 
-import graph
-graph.graph()
+import bars
+bars.graph()
 # messagebox.showinfo("End","You have reached the end")
  
