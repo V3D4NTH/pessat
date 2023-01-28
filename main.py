@@ -112,6 +112,6 @@ storage_file.close()
 import bars
 bars.graph()
 import csv_handler
-csv_handler.csv_writer(csv_handler.fields)
+csv_handler.csv_writer(csv_handler.filename)
 # messagebox.showinfo("End","You have reached the end")
  

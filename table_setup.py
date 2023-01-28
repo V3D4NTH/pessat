@@ -2,7 +2,7 @@ import mysql.connector as mycon
 cn=mycon.connect(host='localhost',user='root',passwd='password',database='pessatui')
 cur=cn.cursor()
 query="""CREATE TABLE ST_DATA (
-    SRN INT NOT NULL ,
+    SRN VARCHAR(255) NOT NULL ,
     ATTITUDE INT,
     MOTIVATION INT,
     CONFIDENCE INT,

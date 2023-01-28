@@ -49,7 +49,7 @@ def marks_awarded(questions):
     return marks
 
 def add_data(l):
-    cm="insert into st_data values ({},{},{},{},{},{});".format(l[0],l[1],l[2],l[3],l[4],l[5])
+    cm="insert into st_data values ('{}',{},{},{},{},{});".format(l[0],l[1],l[2],l[3],l[4],l[5])
 #    print(cm)
     cur.execute(cm)
     cn.commit()
