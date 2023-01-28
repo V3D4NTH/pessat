@@ -6,3 +6,9 @@ This repo is the rough draft of the user interface and database that will be imp
 Run csv_setup and sql_setup once before running main.py.
 
 Need to pip install mysqlconnector and matplotlib and install mysql on your computer.
+
+Contributors:
+- Vedanth Sameer Rao
+- Sumukh Kumar Santhosh
+- Thomas Zacharia
+- Tanistha Hota
