@@ -76,6 +76,9 @@ def update_q():
         root.destroy()
     i+=1
     selection()
+    var.set(0)
+
+
 #this function adds a question to the screen
 def create_label(question):
     global ql
@@ -85,8 +88,13 @@ def create_label(question):
 #here is where we write into a file to store responses
 def selection():
     #print(var.get())
-    storage_file.write(str(var.get())+"\n")
+    storage_file.write(str(var.get())+"\n") 
 def create_options():
+    global option1
+    global option2
+    global option3
+    global option4
+
     option1 = Radiobutton(root,text = "Strongly Agree", variable = var, value = 1)
     option2 = Radiobutton(root,text = "Agree", variable = var, value = 2)
     option3 = Radiobutton(root,text = "Disagree", variable = var, value = 3)
