@@ -20,7 +20,8 @@ This repo is the rough draft of the user interface and database that will be imp
 
 </br>
 
-Collaborators:
+### Collaborators
+----------------------------
 - Vedanth Sameer Rao
 - Sumukh Kumar Santhosh
 - Thomas Zacharia
