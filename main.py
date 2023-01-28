@@ -33,7 +33,7 @@ def get_srn():
     global srn_label
     global e
     global sub
-    srn_label = Label(root, text = "Enter your SRN: ")
+    srn_label = Label(root, text = "Enter your PESSATID: ")
     srn_label.grid(row = 0)
     e = Entry(root)
     e.grid(row = 0, column = 2)
