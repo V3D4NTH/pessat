@@ -55,7 +55,11 @@ def add_data(l):
     cn.commit()
 
 def graph():
-
+    global Attitude_marks
+    global Motivation_marks
+    global Confidence_marks
+    global Resilience_marks
+    global Total_marks
     Attitude_marks = marks_awarded(Attitude_questions)
     Motivation_marks = marks_awarded(Motivation_questions)
     Confidence_marks = marks_awarded(Confidence_questions)
