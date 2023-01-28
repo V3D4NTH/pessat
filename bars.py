@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
-
+import mysql.connector as mycon
+cn=mycon.connect(host='localhost',user='root',passwd='password',database='pessatui')
+cur=cn.cursor()
 
 storage_file = open("answers.txt",'r')
-srn = storage_file.readline()
+srn = storage_file.readline()[:-1]
 answers = storage_file.readlines()
 
 Reverse_Markers = [1,6,11,14,15]
@@ -46,13 +48,20 @@ def marks_awarded(questions):
 
     return marks
 
+def add_data(l):
+    cm="insert into st_data values ({},{},{},{},{},{});".format(l[0],l[1],l[2],l[3],l[4],l[5])
+#    print(cm)
+    cur.execute(cm)
+    cn.commit()
+
 def graph():
 
     Attitude_marks = marks_awarded(Attitude_questions)
     Motivation_marks = marks_awarded(Motivation_questions)
     Confidence_marks = marks_awarded(Confidence_questions)
     Resilience_marks = marks_awarded(Resilience_questions)
-
+    Total_marks = Attitude_marks + Motivation_marks + Confidence_marks + Resilience_marks
+    
     left_coordinates=[1,2,3,4]
     heights=[Attitude_marks,Motivation_marks,Confidence_marks,Resilience_marks]
     bar_labels=["Attitude","Motivation","Confidence","Resilience"]
@@ -61,5 +70,9 @@ def graph():
     plt.ylabel("Marks")
     plt.title("Aptitude Evaluation")
     plt.show()
+    st_data=[srn,Attitude_marks,Motivation_marks,Confidence_marks,Resilience_marks,Total_marks]
+
+    add_data(st_data)
 
 storage_file.close()
+    
