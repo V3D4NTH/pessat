@@ -16,7 +16,7 @@ This repo is the rough draft of the user interface and database that will be imp
 ---------------
 1. Download the files or clone them into a directory on your device.
 
-2. Run `csv_setup.py` and `table_setup.py` once before running main.py.
+2. Run `csv_setup.py` and `table_setup.py` once before running `main.py`.
 
 </br>
 
