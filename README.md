@@ -5,23 +5,22 @@ This repo is the rough draft of the user interface and database that will be imp
 
 </br>
 
-### Prerequisites
-----------------
+## Prerequisites
+
 1. Install `mysql.connector` and `matplotlib` using pip. 
 2. Install `MySQL` on your computer.
 
 </br>
 
-### Get Started
----------------
-1. Download the files or clone them into a directory on your device.
+## Get Started
 
+1. Download the files or clone them into a directory on your device.
 2. Run `csv_setup.py` and `table_setup.py` once before running `main.py`.
 
 </br>
 
-### Collaborators
-----------------------------
+## Collaborators
+
 - Vedanth Sameer Rao
 - Sumukh Kumar Santhosh
 - Thomas Zacharia
